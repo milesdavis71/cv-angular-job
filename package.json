@@ -2,7 +2,7 @@
   "name": "epam-cv",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel & parcel watch src/index.html",
     "build": "parcel build"
   },
   "devDependencies": {
