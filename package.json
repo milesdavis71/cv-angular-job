@@ -1,6 +1,7 @@
 {
   "name": "epam-cv",
   "source": "src/index.html",
+  "license": "MIT",
   "scripts": {
     "start": "parcel & parcel watch src/index.html",
     "build": "parcel build"
