@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "license": "MIT",
   "scripts": {
-    "start": "parcel & parcel watch src/index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build"
   },
   "devDependencies": {
