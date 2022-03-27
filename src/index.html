@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
 
 
     <link rel="stylesheet" href="./sass/main.scss">
@@ -19,59 +19,45 @@
     <!-- <template id="button">
         <a href="#" class="btn btn--white btn--animated">Belépés</a>
     </template> -->
-    <template class="section-book" id="validation">
-        <div class="book">
-            <div class="book__form">
-                <div class="u-margin-bottom-medium">
-                    <h2 class="heading-secondary">
-                        Start booking now
-                    </h2>
-                </div>
-                <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                    <label for="name" class="form__label">Full name</label>
-                </div>
-                <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                    <label for="email" class="form__label">Email address</label>
-                </div>
-                <div class="form__group">
-                    <div class="form__radio-group">
-                        <input type="radio" class="form__radio-input" id="small" name="size">
-                        <label for="small" class="form__radio-label">
-                            <span class="form__radio-button"></span>
-                            Small tour group
-                        </label>
-                    </div>
+    <!-- <template class="section-book" id="login">
+        <p>huhu</p>
+    </template> -->
 
-                    <div class="form__radio-group">
-                        <input type="radio" class="form__radio-input" id="large" name="size">
-                        <label for="large" class="form__radio-label">
-                            <span class="form__radio-button"></span>
-                            Large tour group
-                        </label>
+    <template id="login">
+        <main class="login">
+            <div class="row">
+                <div class="login__text-box">
+                    <img src="img/logo-white.png" alt="">
+                    <h1 class="heading-primary">
+
+
+                        <span class="heading-primary--main">Jelentkezés</span>
+                        <span class="heading-primary--sub">Frontend fejlesztő állásra</span>
+                    </h1>
+                </div>
+                <div class="drag-drop">
+                    <div class="drag">
+                        <i id="drag" class="fa fa-key-skeleton" draggable="true"></i></td>
+                    </div>
+                    <div class="drop">
+                        <i id="drop" class="fa fa-shield-keyhole"></i>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div id="app"></div>
+            </div>
+        </main>
     </template>
-    <main class="login">
-        <div class="row">
-            <div class="login__text-box">
-                <img src="img/logo-white.png" alt="">
-                <h1 class="heading-primary">
+
+    <template id="main">
+        <h1>Fő oldal</h1>
+
+    </template>
 
 
-                    <span class="heading-primary--main">Jelentkezés</span>
-                    <span class="heading-primary--sub">Frontend fejlesztő állásra</span>
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <div id="app"></div>
-        </div>
-    </main>
 
 </body>
+<div id="app"></div>
 
 </html>
