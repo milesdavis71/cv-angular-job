@@ -26,7 +26,7 @@
     <template id="login">
         <main class="login">
             <div class="row">
-                <div class="login__text-box">
+                <div class="login__text-box u-margin-bottom-large">
                     <img src="img/cv-logo.png" alt="">
                     <h1 class="heading-primary">
 
@@ -34,20 +34,25 @@
                         <span class="heading-primary--main">Jelentkezés</span>
                         <span class="heading-primary--sub">Frontend fejlesztő állásra</span>
                     </h1>
-                </div>
-                <div class="drag-drop u-center-text">
-                    <div class="drag">
-                        <i id="drag" class="fa fa-key-skeleton" draggable="true"></i></td>
+                    <div class="btn--animated">
+                        <h4 class="heading-tertiary u-margin-bottom-small">A bemutatkozó oldal megtekintéséhez kérem,
+                            <br>
+                            a fekete kulcsot húzza a piros kulcslyukra!
+                        </h4>
+                        <div class="drag">
+                            <i id="drag" class="fa fa-key-skeleton" draggable="true"></i></td>
+                        </div>
+                        <div class="drop">
+                            <i id="drop" class="fa fa-shield-keyhole"></i>
+                        </div>
                     </div>
-                    <div class="drop">
-                        <i id="drop" class="fa fa-shield-keyhole"></i>
-                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div id="app"></div>
+
             </div>
         </main>
+
+        <div id="app"></div>
+
     </template>
 
     <template id="main">

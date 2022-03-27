@@ -13,7 +13,7 @@ body {
   /* Hack beállítás arra az esetre, ha az animáció
            nem kívánt módon rázkodni kezd. */
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 
   &--main {
     display: block;
@@ -69,7 +69,9 @@ body {
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
-  text-transform: uppercase;
+  line-height: 2.2rem;
+  // text-transform: uppercase;
+  color: $color-grey-light-2;
 }
 
 .paragraph {
@@ -80,8 +82,14 @@ body {
   }
 }
 
+.drag-drop {
+  position: absolut;
+}
+
 .drag {
   font-size: 4rem;
+  color: $color-black;
+  margin-bottom: -0.5rem;
 }
 
 .drop {
