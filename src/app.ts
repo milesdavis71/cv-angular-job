@@ -1,4 +1,4 @@
-class RenderEnterButton {
+class RenderValidation {
   templateElement: HTMLTemplateElement;
   hostElement: HTMLDivElement;
   element: HTMLElement;
@@ -15,4 +15,4 @@ class RenderEnterButton {
   }
 }
 
-const EnterBtn = new RenderEnterButton();
+const EnterBtn = new RenderValidation();
