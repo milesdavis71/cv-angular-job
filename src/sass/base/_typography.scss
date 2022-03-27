@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   /*font-size: 16px*/
   line-height: 1.7;
@@ -77,5 +77,18 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+}
+
+.drag {
+  font-size: 4rem;
+}
+
+.drop {
+  font-size: 6rem;
+  color: red;
+  &--drop {
+    font-size: 6rem;
+    color: green;
   }
 }
