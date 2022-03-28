@@ -11,11 +11,10 @@
 .section-features {
   padding: 10rem 0;
   background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url(../img/nat-4.jpg);
+    to right bottom,
+    rgba($grey, 0.4),
+    rgba($blue, 0.1)
+  );
   background-size: cover;
   // transform: skewY(-7deg);
   // margin-top: -10rem;
@@ -52,8 +51,8 @@
   padding: 10rem 0;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary-light,
-    $color-primary-dark
+    rgba($grey, 0.3),
+    rgba($purple, 0.2)
   );
 
   @include respond(tab-port) {

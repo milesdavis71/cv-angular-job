@@ -7,7 +7,7 @@ body {
 }
 
 .heading-primary {
-  color: $color-white;
+  color: $purple;
   text-transform: uppercase;
 
   backface-visibility: hidden;
@@ -35,6 +35,7 @@ body {
 
   &--sub {
     display: block;
+    color: $dark-yellow;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
@@ -51,15 +52,9 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary-dark
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: 0.2rem;
+
+  color: $dark-yellow;
+  letter-spacing: 0.1rem;
   transition: all 0.2s;
 
   @include respond(tab-port) {
@@ -79,9 +74,9 @@ body {
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
-  color: $color-primary;
+  color: $blue;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .paragraph {
@@ -98,15 +93,21 @@ body {
 
 .drag {
   font-size: 4rem;
-  color: $color-black;
+  color: $dark-yellow;
   margin-bottom: -0.5rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .drop {
   font-size: 6rem;
-  color: red;
+  color: $purple;
+  transition: all 0.2s ease-in-out;
   &--drop {
     font-size: 6rem;
     color: green;
+    transform: scale(1.1);
   }
 }

@@ -2,8 +2,8 @@
   height: 95vh;
   background-image: linear-gradient(
     to right bottom,
-    rgba($color-primary-light, 0.8),
-    rgba($color-primary-dark, 0.8)
+    rgba($grey, 0.8),
+    rgba($grey-dark, 0.8)
   );
   background-size: cover;
   background-position: top;
@@ -11,15 +11,18 @@
   text-align: center;
   padding-top: 3rem;
 
-  &__logo {
-    animation: scale 0.5s ease-out 0.75s;
-  }
-
-  &__text-box {
+  &__block {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  &__logo {
+    animation: scale 0.5s ease-out 0.75s;
+  }
+
+  // &__text-box {
+  // }
 }
