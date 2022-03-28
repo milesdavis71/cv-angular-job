@@ -1,19 +1,12 @@
 @mixin clearfix {
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
 }
 
-@mixin absCenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-// MEDIA QUERY MANAGER
+//Media query manager
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -31,20 +24,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == tab-port {
-    @media only screen and (max-width: 56.25em) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5rem) {
       @content;
-    } //900px
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25rem) {
+      @content;
+    }
   }
   @if $breakpoint == tab-land {
-    @media only screen and (max-width: 75em) {
+    @media (max-width: 75rem) {
       @content;
-    } //1200px
+    }
   }
   @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 112.5em) {
+    @media (min-width: 112.5rem) {
       @content;
-    } //1800
+    }
   }
 }
