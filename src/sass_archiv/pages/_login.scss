@@ -8,6 +8,13 @@
   background-size: cover;
   background-position: top;
   position: relative;
+  transition: 1s;
+  transition: 1s opacity;
+
+  &__fade-out {
+    opacity: 0;
+    transition: none;
+  }
 
   &__logo {
     height: 3.5rem;

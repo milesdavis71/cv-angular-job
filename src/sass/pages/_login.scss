@@ -8,9 +8,11 @@
   background-size: cover;
   background-position: top;
   position: relative;
+  text-align: center;
+  padding-top: 3rem;
 
   &__logo {
-    height: 3.5rem;
+    animation: scale 0.5s ease-out 0.75s;
   }
 
   &__text-box {
