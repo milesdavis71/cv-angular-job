@@ -50,7 +50,7 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   display: inline-block;
 
   color: $dark-yellow;
@@ -94,7 +94,7 @@ body {
 .drag {
   font-size: 4rem;
   color: $dark-yellow;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1.5rem;
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.1);
@@ -118,4 +118,10 @@ ul li {
     color: $dark-yellow;
     font-size: 1.3em;
   }
+}
+
+[class^="fa-solid"] {
+  color: $dark-yellow;
+  font-size: 1.4rem;
+  padding-right: 0.3rem;
 }
