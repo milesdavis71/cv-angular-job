@@ -6,6 +6,10 @@ body {
   color: $color-grey-dark;
 }
 
+a {
+  color: $purple;
+}
+
 .heading-primary {
   color: $purple;
   text-transform: uppercase;
@@ -23,7 +27,7 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       letter-spacing: 1rem;
       font-family: 5rem;
     }
@@ -41,8 +45,9 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
 
-    @include respond(phone) {
-      letter-spacing: 0.5rem;
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+      letter-spacing: 0.2rem;
     }
   }
 }
@@ -58,11 +63,7 @@ body {
   transition: all 0.2s;
 
   @include respond(tab-port) {
-    font-size: 3rem;
-  }
-
-  @include respond(phone) {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   &:hover {
@@ -77,6 +78,10 @@ body {
   color: $blue;
   text-align: center;
   // text-transform: uppercase;
+  @include respond(tab-port) {
+    font-size: 2.2rem;
+    line-height: 3.4rem;
+  }
 }
 
 .paragraph {
@@ -99,6 +104,9 @@ body {
   &:hover {
     transform: scale(1.1);
   }
+  @include respond(tab-port) {
+    font-size: 7rem;
+  }
 }
 
 .drop {
@@ -109,6 +117,12 @@ body {
     font-size: 6rem;
     color: green;
     transform: scale(1.1);
+  }
+  @include respond(tab-port) {
+    font-size: 9rem;
+    &--drop {
+      font-size: 9rem;
+    }
   }
 }
 
