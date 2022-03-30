@@ -113,11 +113,13 @@ class DragAndDrop implements DragAndDrop {
 
     dragId === "drag"
       ? this.clearHostAndRenderMain()
-      : alert("Hiba a betöltéssel");
+      : alert("Belépéshez húzza a kulcsot a kulcslyuk fölé!");
   }
 
   @autobind
-  dragLeaveHandler(_: DragEvent): void {}
+  dragLeaveHandler(_: DragEvent): void {
+    this.dropElement.classList.remove("drop--drop");
+  }
 
   configure() {
     this.dragElement.addEventListener("dragstart", this.dragStartHandler);
