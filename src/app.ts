@@ -61,7 +61,7 @@ class ClickLock {
     this.lockElement.innerHTML = '<i class="fa-solid fa-unlock green"></i>';
     setTimeout(() => {
       this.clearHostAndRenderMain();
-    }, 1500);
+    }, 1100);
   }
 
   @autobind
@@ -71,7 +71,7 @@ class ClickLock {
     this.lockElement.innerHTML = '<i class="fa-solid fa-unlock"></i>';
     setTimeout(() => {
       this.clearHostAndRenderMain();
-    }, 1500);
+    }, 1100);
   }
 
   configure() {
