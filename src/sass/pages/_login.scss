@@ -10,6 +10,13 @@
   position: relative;
   text-align: center;
   padding-top: 3rem;
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($grey, 0),
+      rgba($grey-dark, 0)
+    );
+  }
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
