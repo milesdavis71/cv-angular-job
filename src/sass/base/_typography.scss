@@ -104,34 +104,28 @@ a {
   animation-fill-mode: backwards;
 }
 
-.drag {
+.lock {
   font-size: 5rem;
   color: $dark-yellow;
   margin-bottom: -2rem;
-  transition: all 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.1);
+    color: $blue;
   }
+  &:active,
+  :visited,
+  :focus {
+    color: green;
+  }
+  // &--unclock {
+  //   color: green;
+  // }
   @include respond(tab-port) {
     font-size: 7rem;
   }
 }
 
-.drop {
-  font-size: 6rem;
-  color: $purple;
-  transition: all 0.2s ease-in-out;
-  &--drop {
-    font-size: 6rem;
-    color: green;
-    transform: scale(1.1);
-  }
-  @include respond(tab-port) {
-    font-size: 9rem;
-    &--drop {
-      font-size: 9rem;
-    }
-  }
+.green {
+  color: green;
 }
 
 ul li {

@@ -1,12 +1,3 @@
-interface DragAndDrop {
-  dragStartHandler(event: DragEvent): void;
-  dragEndHandler(event: DragEvent): void;
-
-  dragOverHandler(event: DragEvent): void;
-  dropHandler(event: DragEvent): void;
-  dragLeaveHandler(event: DragEvent): void;
-}
-
 function autobind(_: any, _2: string, descriptor: PropertyDescriptor) {
   const originalMethod = descriptor.value;
   const adjDescriptor: PropertyDescriptor = {
@@ -44,37 +35,11 @@ class RenderLogin {
   }
 }
 
-// class RenderMain {
-//   templateElement: HTMLTemplateElement;
-//   hostElement: HTMLDivElement;
-//   element: HTMLElement;
-
-//   constructor() {
-//     this.templateElement = document.getElementById(
-//       "main"
-//     ) as HTMLTemplateElement;
-//     this.hostElement = document.getElementById("app") as HTMLDivElement;
-//     const importedNode = document.importNode(
-//       this.templateElement.content,
-//       true
-//     );
-
-//     this.element = importedNode.firstElementChild as HTMLElement;
-
-//     this.renderMainPage();
-//   }
-
-//   renderMainPage() {
-//     this.hostElement.insertAdjacentElement("afterbegin", this.element);
-//   }
-// }
-
-class DragAndDrop implements DragAndDrop {
+class ClickLock {
   templateElement: HTMLTemplateElement;
   hostElement: HTMLDivElement;
   element: HTMLElement;
-  dragElement: HTMLDivElement;
-  dropElement: HTMLDivElement;
+  lockElement: HTMLElement;
   constructor() {
     this.templateElement = document.getElementById(
       "main"
@@ -86,48 +51,32 @@ class DragAndDrop implements DragAndDrop {
     );
     this.element = importedNode.firstElementChild as HTMLElement;
 
-    this.dragElement = document.querySelector(".drag") as HTMLDivElement;
-    this.dropElement = document.querySelector(".drop") as HTMLDivElement;
+    this.lockElement = document.querySelector(".lock") as HTMLElement;
     this.configure();
   }
 
-  dragStartHandler(event: DragEvent): void {
-    event.dataTransfer!.setData("text/plain", "drag");
-
-    event.dataTransfer!.effectAllowed = "move";
-  }
-  dragEndHandler(_: DragEvent): void {}
-
   @autobind
-  dragOverHandler(event: DragEvent): void {
-    if (event.dataTransfer && event.dataTransfer.types[0] === "text/plain") {
-      event.preventDefault();
-      this.dropElement.classList.add("drop--drop");
-    }
+  clickHandler() {
+    this.lockElement;
+    this.lockElement.innerHTML = '<i class="fa-solid fa-unlock green"></i>';
+    setTimeout(() => {
+      this.clearHostAndRenderMain();
+    }, 1500);
   }
 
   @autobind
-  dropHandler(event: DragEvent): void {
-    event.preventDefault();
-    const dragId = event.dataTransfer!.getData("text/plain");
-
-    dragId === "drag"
-      ? this.clearHostAndRenderMain()
-      : alert("Belépéshez húzza a kulcsot a kulcslyuk fölé!");
-  }
-
-  @autobind
-  dragLeaveHandler(_: DragEvent): void {
-    this.dropElement.classList.remove("drop--drop");
+  touchStartHandler(event: TouchEvent) {
+    event.preventDefault;
+    // this.lockElement.classList.add("lock--gesture");
+    this.lockElement.innerHTML = '<i class="fa-solid fa-unlock"></i>';
+    setTimeout(() => {
+      this.clearHostAndRenderMain();
+    }, 1500);
   }
 
   configure() {
-    this.dragElement.addEventListener("dragstart", this.dragStartHandler);
-    this.dragElement.addEventListener("dragend", this.dragEndHandler);
-
-    this.dropElement.addEventListener("dragover", this.dragOverHandler);
-    this.dropElement.addEventListener("drop", this.dropHandler);
-    this.dropElement.addEventListener("dragleave", this.dragLeaveHandler);
+    this.lockElement.addEventListener("click", this.clickHandler);
+    this.lockElement.addEventListener("touchstart", this.touchStartHandler);
   }
 
   clearHostAndRenderMain() {
@@ -137,4 +86,4 @@ class DragAndDrop implements DragAndDrop {
 }
 
 const renderLogin = new RenderLogin();
-const dragAndDrop = new DragAndDrop();
+const clickLock = new ClickLock();
