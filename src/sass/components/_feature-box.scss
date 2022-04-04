@@ -10,6 +10,12 @@
     padding: 2rem;
   }
 
+  &__text {
+    @include respond(tab-port) {
+      padding-left: 8rem;
+    }
+  }
+
   &__pict {
     // font-size: 6rem;
     margin-bottom: 0.5rem;
