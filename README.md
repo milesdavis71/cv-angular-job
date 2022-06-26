@@ -1,2 +1,2 @@
-# cv-angular-job
-Jelentkezés a PC Trade Systemhez
+# epam-cv
+Jelentkezés az EPAM-ba
