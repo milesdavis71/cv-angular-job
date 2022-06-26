@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61e4dd2a-7364-424b-a365-ac16928469c8" name="Default Changelist" comment="Delete README.md file" />
+    <list id="fa297a9d-e0e2-49aa-8dc9-ea2934c2ad39" name="Update README.md" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectId" id="2B6cVUAvJsdBbMgupvIwYhY6cnG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61e4dd2a-7364-424b-a365-ac16928469c8" name="Default Changelist" comment="" />
+      <changelist id="fa297a9d-e0e2-49aa-8dc9-ea2934c2ad39" name="Update README.md" comment="" />
+      <created>1656229998243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656229998243</updated>
+      <workItem from="1656229999378" duration="1462000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="1167" height="880" key="DiffContextDialog" timestamp="1656230967392">
+      <screen x="0" y="0" width="1851" height="1080" />
+    </state>
+    <state x="100" y="100" width="1167" height="880" key="DiffContextDialog/0.0.1851.1080@0.0.1851.1080" timestamp="1656230967392" />
+    <state width="1329" height="292" key="GridCell.Tab.0.bottom" timestamp="1656231461583">
+      <screen x="0" y="0" width="1851" height="1080" />
+    </state>
+    <state width="1329" height="292" key="GridCell.Tab.0.bottom/0.0.1851.1080@0.0.1851.1080" timestamp="1656231461583" />
+    <state width="1329" height="292" key="GridCell.Tab.0.center" timestamp="1656231461583">
+      <screen x="0" y="0" width="1851" height="1080" />
+    </state>
+    <state width="1329" height="292" key="GridCell.Tab.0.center/0.0.1851.1080@0.0.1851.1080" timestamp="1656231461583" />
+    <state width="1329" height="292" key="GridCell.Tab.0.left" timestamp="1656231461583">
+      <screen x="0" y="0" width="1851" height="1080" />
+    </state>
+    <state width="1329" height="292" key="GridCell.Tab.0.left/0.0.1851.1080@0.0.1851.1080" timestamp="1656231461583" />
+    <state width="1329" height="292" key="GridCell.Tab.0.right" timestamp="1656231461583">
+      <screen x="0" y="0" width="1851" height="1080" />
+    </state>
+    <state width="1329" height="292" key="GridCell.Tab.0.right/0.0.1851.1080@0.0.1851.1080" timestamp="1656231461583" />
+    <state x="531" y="454" key="VCS.ChangelistChooser" timestamp="1656230887710">
+      <screen x="0" y="0" width="1851" height="1080" />
+    </state>
+    <state x="531" y="454" key="VCS.ChangelistChooser/0.0.1851.1080@0.0.1851.1080" timestamp="1656230887710" />
+  </component>
+</project>
