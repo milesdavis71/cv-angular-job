@@ -1,2 +1,7 @@
 # cv-angular-job
-Jelentkezés a PC Trade Systemhez
+
+Istallálás:
+yarn install
+
+Futtatás:
+yarn start
