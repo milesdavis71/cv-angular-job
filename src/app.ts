@@ -56,7 +56,6 @@ class ClickLock {
 
   @autobind
   clickHandler() {
-    this.lockElement;
     this.lockElement.innerHTML = '<i class="fa-solid fa-unlock green"></i>';
     setTimeout(() => {
       this.clearHostAndRenderMain();
