@@ -1,6 +1,6 @@
 # cv-angular-job
 
-Istallálás:
+Telepítés:
 yarn install
 
 Futtatás:
